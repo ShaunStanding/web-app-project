@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 id="h1">Login or Register</h1>
+
+
+<form>
+<div class="container-fluid text-left" style="color: rgb(255, 255, 255);" >
+<label for="exampleInputEmail1" class="form-label" >Email address:</label>
+<input type="email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
+<div id="emailHelp" class="form-text"  style="color: rgba(255, 255, 255, 0.461);">We'll never share your email with anyone else.</div>
+</div>
+<div class="container-fluid text-left"  style="color: rgb(255, 255, 255);">
+<label for="exampleInputPassword1" class="form-label">Password:</label>
+<input type="password" class="form-control" id="exampleInputPassword1" required>
+</div><br>
+<div class="container-fluid">
+<button type="submit" class="btn btn-secondary">Login</button>
+<button type="submit" class="btn btn-secondary">Register</button>
+</div>  
+</form>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 id="h1" class="col-md-12 text-center">Contact us</h1>
+<div class="container-fluid  text-left">
+<form class="row g-3" style="color: rgb(255, 255, 255);">
+<div class="col-md-6"> <label for="firstName" class="form-label">First name:</label><input type="text" class="form-control" id="firstName" required></div>
+<div class="col-md-6"><label for="lastName" class="form-label">Last name:</label><input type="text" class="form-control" id="lastName" required></div>
+<div class="col-md-8">
+<label for="emailInfo" class="form-label">E-mail:</label><input type="email" class="form-control" id="emailInfo" required placeholder="name@email.com"></div>
+
+<div class="col-md-4"> <label for="phoneNumber" class="form-label">Phone number:</label><input type="text" class="form-control" id="phoneNumber" placeholder="+44"></div>
+
+<div class="col-md-12">
+    <label for="comments"  class="form-label">Comments or questions:</label>
+    <textarea class="form-control" id="comments" rows="3" required></textarea>
+
+
+</div>
+<div class="col-md-12"><button type="submit" class=" btn btn-secondary">Submit</button></div>
+
+
+</form>
+
+
+</div>
+
+{% endblock %}
